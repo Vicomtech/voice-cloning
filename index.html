@@ -1,1 +1,214 @@
-<h1>voice-cloning</h1>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Audio samples from "Exploring the limits of neural voice cloning: A case study on two well-known personalities"</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+    <!-- <link rel="shortcut icon" href="icon.png"> -->
+  </head>
+  <body>
+    <article>
+      <header>
+        <h1>Audio samples from "Exploring the limits of neural voice cloning: A case study on two well-known personalities"</h1>
+      </header>
+    </article>
+
+    <!-- <div><b>Paper:</b> <a href="https://arxiv.org/abs/1712.05884">arXiv</a></div> -->
+    <div><b>Authors:</b> Ander González-Docasal, Aitor Álvarez, Haritz Arzelus</div>
+    <div><b>Abstract:</b> This work describes one successful and one failed Voice Cloning processes of two famous personalities in order to be broadcast in a high-impact podcast and in a Spanish public television program. Whilst a good quality synthesised voice could be generated for the first public figure, the second one was not adequate enough for its broadcast on television given its low speech quality. In this study, we explore the limits of the neural voice cloning considering the different conditions of the training material employed in each case and, based on several objective measures (volume of data, phoneme occurrence, SNR, PESQ and MCD), we analysed the main features to be considered for a high-quality synthetic voice generation. 
+    </div>
+
+    <div>
+      <h2>Synthesised audios seen during training</h2>
+        Here we compare the audios used on training with their corresponding synthesised counterpart. These pairs were used to compute PESQ values. We therefore provide two examples of each corpus of audios which returned higher and lower PESQ values.
+      <div>
+        <h3>With higher PESQ values</h3>
+        <div class="grid-container">
+          <div>
+            <h4>XRey</h4>
+          </div>
+          <div>
+            <h4>Alejandro Valverde</h4>
+          </div>
+        </div>
+        <div class="grid-container">
+          <div>
+            <p>«El interés legítimo de uno es también el de los demás»</p>
+          </div>
+          <div>
+            <p>«Es algo que salió de mí, es algo que salió también de… de Antonio Sánchez.»</p>
+          </div>
+        </div>
+        <div class="grid-container">
+          <div>
+            <table style="margin-bottom:5mm;">
+              <tr><td>Original</td><td><audio controls><source src="audios/xrey/pesq/good/927-2323030-2326130-orig.wav"></audio></td></tr>
+              <tr><td>Synthetic GTA</td><td><audio controls><source src="audios/xrey/pesq/good/927-2323030-2326130-synth.wav"></audio></td><td>3.089</td></tr>
+              <tr><td>Synth from text</td><td><audio controls><source src="audios/xrey/pesq/good/wav-batch_2_sentence_0-linear.wav"></audio></td></tr>
+            </table>
+            </div>
+          <div>
+            <table style="margin-bottom:5mm;">
+              <tr><td>Original</td><td><audio controls><source src="audios/valverde/pesq/good/baile_LOTE4_LIMPIO_148-0.69-3.6-orig.wav"></audio></td></tr>
+              <tr><td>Synthetic GTA</td><td><audio controls><source src="audios/valverde/pesq/good/baile_LOTE4_LIMPIO_148-0.69-3.6-synth.wav"></audio></td><td>2.220</td></tr>
+              <tr><td>Synth from text</td><td><audio controls><source src="audios/valverde/pesq/good/0001.wav"></audio></td></tr>
+            </table>
+          </div>
+        </div>
+        <div class="grid-container">
+          <div>
+            <p>«Supone un largo periodo de trabajo, de convivencia, de mutua comprensión y de esperanza.»</p>
+          </div>
+          <div>
+            <p>«Se ha multiplicadooo muchísimo.»</p>
+          </div>
+        </div>
+        <div class="grid-container">
+          <div>
+            <table style="margin-bottom:5mm;">
+              <tr><td>Original</td><td><audio controls><source src="audios/xrey/pesq/good/782-0082940-0087949-orig.wav"></audio></td></tr>
+              <tr><td>Synthetic GTA</td><td><audio controls><source src="audios/xrey/pesq/good/782-0082940-0087949-synth.wav"></audio></td><td>3.055</td></tr>
+              <tr><td>Synth from text</td><td><audio controls><source src="audios/xrey/pesq/good/wav-batch_3_sentence_0-linear.wav"></audio></td></tr>
+            </table>
+            </div>
+          <div>
+            <table style="margin-bottom:5mm;">
+              <tr><td>Original</td><td><audio controls><source src="audios/valverde/pesq/good/baile_LOTE4_LIMPIO_116-7.02-8.76-orig.wav"></audio></td></tr>
+              <tr><td>Synthetic GTA</td><td><audio controls><source src="audios/valverde/pesq/good/baile_LOTE4_LIMPIO_116-7.02-8.76-synth.wav"></audio></td><td>2.195</td></tr>
+              <tr><td>Synth from text</td><td><audio controls><source src="audios/valverde/pesq/good/0002.wav"></audio></td></tr>
+            </table>
+          </div>
+        </div>
+
+        <h3>With lower PESQ values</h3>
+        <div class="grid-container">
+          <div>
+            <h4>XRey</h4>
+          </div>
+          <div>
+            <h4>Alejandro Valverde</h4>
+          </div>
+        </div>
+        <div class="grid-container">
+          <div>
+            <p>«En la orientación general de las nuevas naciones independientes, hacia fórmulas económico sociales, de unidad y de utilización de la empresa pública.»</p>
+          </div>
+          <div>
+            <p>«Para mí aparte de entrenamiento esto disfrutamos.»</p>
+          </div>
+        </div>
+        <div class="grid-container">
+          <div>
+          <table style="margin-bottom:5mm;">
+            <tr><td>Original</td><td><audio controls><source src="audios/xrey/pesq/bad/817-0377260-0385510-orig.wav"></audio></td></tr>
+            <tr><td>Synthetic GTA</td><td><audio controls><source src="audios/xrey/pesq/bad/817-0377260-0385510-synth.wav"></audio></td><td>1.570</td></tr>
+            <tr><td>Synth from text</td><td><audio controls><source src="audios/xrey/pesq/bad/wav-batch_1_sentence_0-linear.wav"></audio></td></tr>
+          </table>
+          </div>
+          <div>
+          <table style="margin-bottom:5mm;">
+            <tr><td>Original</td><td><audio controls><source src="audios/valverde/pesq/bad/baile_LOTE5_LIMPIO_261-22.71-24.57-orig.wav"></audio></td></tr>
+            <tr><td>Synthetic GTA</td><td><audio controls><source src="audios/valverde/pesq/bad/baile_LOTE5_LIMPIO_261-22.71-24.57-synth.wav"></audio></td><td>1.027</td></tr>
+            <tr><td>Synth from text</td><td><audio controls><source src="audios/valverde/pesq/bad/0003.wav"></audio></td></tr>
+          </table>
+         </div>
+        </div>
+        <div class="grid-container">
+          <div>
+            <p>«Todavía no adivinan, cuánto entraña nuestra voluntad de fundar principalmente sobre el sindicalismo nacional, un sistema político entero de representación y convivencia.»</p>
+          </div>
+          <div>
+            <p>Nos vemos. ¡chicos, vamos!»</p>
+         </div>
+        </div>
+        <div class="grid-container">
+          <div>
+          <table style="margin-bottom:5mm;">
+            <tr><td>Original</td><td><audio controls><source src="audios/xrey/pesq/bad/849-1157550-1168100-orig.wav"></audio></td></tr>
+            <tr><td>Synthetic GTA</td><td><audio controls><source src="audios/xrey/pesq/bad/849-1157550-1168100-synth.wav"></audio></td><td>1.528</td></tr>
+            <tr><td>Synth from text</td><td><audio controls><source src="audios/xrey/pesq/bad/wav-batch_0_sentence_0-linear.wav"></audio></td></tr>
+          </table>
+          </div>
+          <div>
+          <table style="margin-bottom:5mm;">
+            <tr><td>Original</td><td><audio controls><source src="audios/valverde/pesq/bad/baile_LOTE5_LIMPIO_262-7.08-8.34-orig.wav"></audio></td></tr>
+            <tr><td>Synthetic GTA</td><td><audio controls><source src="audios/valverde/pesq/bad/baile_LOTE5_LIMPIO_262-7.08-8.34-synth.wav"></audio></td><td>1.036</td></tr>
+            <tr><td>Synth from text</td><td><audio controls><source src="audios/valverde/pesq/bad/0004.wav"></audio></td></tr>
+          </table>
+         </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <h2>Synthesised unseen audios</h2>
+        These audios were not seen during training and were synthesised for the media production
+      <div>
+        <h3>XRey</h3>
+          <p>«Mi querido infante. 
+En los momentos en que en cumplimiento del Artículo VI de la Ley de Sucesión, tomo la decisión de proponer a las cortes mi sucesor en la Jefatura del Estado, en favor de vuestro hijo Don Juan Carlos.
+Quiero comunicároslo y expresaros mis sentimientos por la desilusión que pueda causaros, y mi confianza de que sabréis aceptarlo con la grandeza de ánimo heredada de vuestro augusto padre, Don Alfonso XIII.»</p>
+        <table style="margin-bottom:5mm;">
+          <tr><td><audio controls><source src="audios/xrey/in_podcast/carta_xrey.wav"></audio></td></tr>
+        </table>
+          <p>«Yo he creado ciertas instituciones.
+Nadie piensa que funcionarán, están equivocados. 
+El Príncipe Juan Carlos será rey porque no hay alternativa. 
+España irá lejos en el camino que desean ustedes, los ingleses y los franceses.
+Democracia, pornografía, droga, qué sé yo. 
+Habrá grandes locuras, pero ninguna de ellas será fatal para España.»</p>
+        <table style="margin-bottom:5mm;">
+          <tr><td><audio controls><source src="audios/xrey/in_podcast/walters.wav"></audio></td></tr>
+        </table>
+
+      </div>
+      <div>
+        <h3>Alejandro Valverde</h3>
+        <p>«Hola, soy Alejandro Valverde. Quiero agradecer a la organización “Respirar y <i>reciclar</i>” por su tarea de concienciación social. 
+Acabo de ver vuestro trabajo con el autocar convertido en semilleros y me ha impresionado.
+La avioneta-huerto es espectacular. 
+Hacéis cosas asombrosas. 
+Con vuestro esfuerzo y reciclados, señaláis el camino a la sociedad.
+Y como no hay mejor muestra que el apoyo real, he decidido regalar mi coche a “Respirar y reciclar”.
+Estáis transformando el mundo y <i>quiero</i> formar parte de eso.»</p>
+        <table style="margin-bottom:5mm;">
+          <tr><td><audio controls><source src="audios/valverde/entrega/entrega.wav"></audio></td></tr>
+        </table>
+
+      </div>
+    </div>
+
+    <div>
+      <h2>Original audio samples</h2>
+      The following samples were used for training both voices
+      <div class="grid-container">
+        <div>
+          <h4>XRey</h4>
+          <table style="margin-bottom:5mm;">
+            <tr><td>Years 1955 and 1956</td></tr>
+            <tr><td><audio controls><source src="audios/xrey/1955/777-0016840-0026510.wav"></audio></td></tr>
+          </table>
+          <table style="margin-bottom:5mm;">
+            <tr><td>Years 1960 and 1961</td></tr>
+            <tr><td><audio controls><source src="audios/xrey/1960/775-0002840-0020110.wav"></audio></td></tr>
+          </table>
+          <table style="margin-bottom:5mm;">
+            <tr><td>Years 1968 and 1969</td></tr>
+            <tr><td><audio controls><source src="audios/xrey/1969/775-0004620-0019540.wav"></audio></td></tr>
+          </table>
+        </div>
+        <div>
+          <h4>Alejandro Valverde</h4>
+          <table style="margin-bottom:5mm;">
+            <tr><td>Documentary</td></tr>
+            <tr><td><audio controls><source src="audios/valverde/documental/baile_LOTE5_LIMPIO_242-8.31-19.68.wav"></audio></td></tr>
+          </table>
+          <table>
+            <tr><td>Interview</td></tr>
+            <tr><td><audio controls><source src="audios/valverde/originales/baile_LOTE4_LIMPIO_132-0.33-11.13.wav"></audio></td></tr>
+          </table>
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
