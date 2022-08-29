@@ -101,3 +101,9 @@ td.synthesis {
     grid-template-columns: 1fr 1fr;
     grid-gap: 0%;
 }
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
